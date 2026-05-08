@@ -1,0 +1,61 @@
+# ── Excluded project folders ──────────────────────────────────────────────────
+Docs/
+outputs/
+dataset/
+
+# ── Python ────────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# ── Virtual environments ──────────────────────────────────────────────────────
+.venv/
+venv/
+env/
+ENV/
+
+# ── Jupyter ───────────────────────────────────────────────────────────────────
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/
+
+# ── Environment & secrets ─────────────────────────────────────────────────────
+.env
+.env.*
+*.env
+secrets.yaml
+secrets.json
+
+# ── macOS ─────────────────────────────────────────────────────────────────────
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# ── IDEs ──────────────────────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ── Package managers ──────────────────────────────────────────────────────────
+uv.lock
+.python-version
+
+# ── Model artefacts (add back when saving trained models) ─────────────────────
+*.pkl
+*.joblib
+*.h5
+*.pt
+*.pth
+
+# ── Logs & temporary files ────────────────────────────────────────────────────
+*.log
+*.tmp
+*.bak
+.cache/
