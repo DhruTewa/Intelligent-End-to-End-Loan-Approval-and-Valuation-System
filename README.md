@@ -29,9 +29,6 @@ The system is designed as a learning progression — notebooks first, production
 | Model | ROC-AUC | F1 | Accuracy |
 |---|---|---|---|
 | Random Forest *(baseline)* | **1.000** | 0.999 | 0.999 |
-| Gradient Boosting | **1.000** | 1.000 | 1.000 |
-| XGBoost | **1.000** | 0.997 | 0.997 |
-| Decision Tree | **1.000** | 1.000 | 1.000 |
 | SVM | 0.987 | 0.947 | 0.933 |
 | Logistic Regression | 0.973 | 0.933 | 0.916 |
 | KNN | 0.958 | 0.924 | 0.904 |
