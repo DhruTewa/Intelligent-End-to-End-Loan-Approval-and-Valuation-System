@@ -187,25 +187,3 @@ All steps that learn parameters are **fitted on training data only** to prevent 
 | Statistics | `scipy` | Distributions for RandomizedSearchCV |
 | Diagram | `matplotlib` | Architecture diagram generation |
 
----
-
-## Roadmap
-
-- [x] Automated EDA with HTML report export
-- [x] Feature engineering and preprocessing pipeline
-- [x] Multi-model baseline comparison (7 classifiers, 6 regressors)
-- [x] Hyperparameter tuning (RandomizedSearchCV → GridSearchCV)
-- [x] Cross-validation (StratifiedKFold / KFold, 5 folds)
-- [x] Regression model for approved loan amount
-- [x] Streamlit web application (Predict, Dashboard, About)
-- [x] Modular Python package (`src/`)
-- [x] System architecture diagram
-- [ ] SHAP explainability for per-prediction feature attribution
-- [ ] Batch prediction via CSV upload
-- [ ] REST API with FastAPI
-
----
-
-## License
-
-This project is licensed under the MIT License.
