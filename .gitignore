@@ -2,7 +2,6 @@
 Docs/
 outputs/
 dataset/
-models/
 
 # ── Python ────────────────────────────────────────────────────────────────────
 __pycache__/
@@ -48,9 +47,8 @@ secrets.json
 uv.lock
 .python-version
 
-# ── Model artefacts (add back when saving trained models) ─────────────────────
-*.pkl
-*.joblib
+# ── Model artefacts ───────────────────────────────────────────────────────────
+# models/ directory is tracked so artifacts can be deployed to Streamlit Cloud
 *.h5
 *.pt
 *.pth

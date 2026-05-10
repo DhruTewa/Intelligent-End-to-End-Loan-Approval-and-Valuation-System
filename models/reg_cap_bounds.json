@@ -1,0 +1,14 @@
+{
+  "residential_assets_value": [
+    -11600000.0,
+    25200000.0
+  ],
+  "commercial_assets_value": [
+    -8200000.0,
+    17400000.0
+  ],
+  "bank_asset_value": [
+    -5050000.0,
+    14550000.0
+  ]
+}

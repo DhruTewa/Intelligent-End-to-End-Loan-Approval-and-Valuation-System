@@ -1,0 +1,33 @@
+{
+  "feature_names": [
+    "no_of_dependents",
+    "education",
+    "self_employed",
+    "income_annum",
+    "loan_term",
+    "cibil_score",
+    "residential_assets_value",
+    "commercial_assets_value",
+    "luxury_assets_value",
+    "bank_asset_value",
+    "total_assets",
+    "asset_to_income"
+  ],
+  "target": "loan_amount (\u20b9)",
+  "target_transform": "log1p during training; expm1 to get predictions in \u20b9",
+  "training_subset": "approved loans only (loan_status == 1)",
+  "best_hyperparams": {
+    "bootstrap": true,
+    "max_depth": 5,
+    "max_features": null,
+    "min_samples_leaf": 9,
+    "min_samples_split": 14,
+    "n_estimators": 473
+  },
+  "cv_r2_mean": 0.945627,
+  "cv_r2_std": 0.006665,
+  "test_r2": 0.873632,
+  "test_rmse_rupees": 3295682.0,
+  "test_mae_rupees": 2467503.0,
+  "test_mape_pct": 18.2154
+}

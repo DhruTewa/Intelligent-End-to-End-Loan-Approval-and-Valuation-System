@@ -1,0 +1,32 @@
+{
+  "feature_names": [
+    "no_of_dependents",
+    "education",
+    "self_employed",
+    "income_annum",
+    "loan_amount",
+    "loan_term",
+    "cibil_score",
+    "residential_assets_value",
+    "commercial_assets_value",
+    "luxury_assets_value",
+    "bank_asset_value",
+    "total_assets",
+    "loan_to_income",
+    "asset_to_loan"
+  ],
+  "best_hyperparams": {
+    "bootstrap": true,
+    "class_weight": null,
+    "max_depth": null,
+    "max_features": null,
+    "min_samples_leaf": 1,
+    "min_samples_split": 11,
+    "n_estimators": 471
+  },
+  "cv_roc_auc_mean": 1.0,
+  "cv_roc_auc_std": 0.0,
+  "test_roc_auc": 1.0,
+  "test_f1": 1.0,
+  "test_accuracy": 1.0
+}
