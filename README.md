@@ -66,11 +66,7 @@ The Streamlit app has three pages:
 
 | Metric | Score |
 |---|---|
-| ROC-AUC | **1.000** |
-| F1 Score | **0.999** |
-| Accuracy | **0.999** |
-| Precision | **0.998** |
-| Recall | **1.000** |
+| F1 Score | **0.99** |
 
 > **Key insight:** CIBIL score alone carries a 0.771 Pearson correlation with the target — it acts as a near-perfect separator between approved and rejected applications.
 
@@ -78,8 +74,8 @@ The Streamlit app has three pages:
 
 | Metric | Value |
 |---|---|
-| R² | see `models/reg_model_metadata.json` |
-| MAPE | see Dashboard |
+| R² (test set) | **0.87** |
+| R² (5-fold CV) | **0.95 ± 0.007** |
 
 ---
 
@@ -146,6 +142,30 @@ All steps that learn parameters are **fitted on training data only** to prevent 
 
 1. **RandomizedSearchCV** (100 candidates × 5-fold CV) — broad exploration over `n_estimators`, `max_depth`, `min_samples_split`, `min_samples_leaf`, `max_features`, `bootstrap`, `class_weight`
 2. **GridSearchCV** — fine-tuned grid centred on Stage 1 winner
+
+### Final Hyperparameters
+
+**Classifier (Random Forest)**
+
+| Parameter | Value |
+|---|---|
+| `n_estimators` | 471 |
+| `max_depth` | None (full depth) |
+| `max_features` | None (all features) |
+| `min_samples_split` | 11 |
+| `min_samples_leaf` | 1 |
+| `bootstrap` | True |
+
+**Regressor (Random Forest)**
+
+| Parameter | Value |
+|---|---|
+| `n_estimators` | 473 |
+| `max_depth` | 5 |
+| `max_features` | None (all features) |
+| `min_samples_split` | 14 |
+| `min_samples_leaf` | 9 |
+| `bootstrap` | True |
 
 ### Regressor Design
 
